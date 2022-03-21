@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {Nav, NavContainer, LogoHold, MobileIcon, Navig, Navlink} from './Navbar.Element.js'
 import {FaMagento} from 'react-icons/fa'
 import {FaBars, FaTimes} from 'react-icons/fa'
+import {Link} from 'react-router-dom'
 
 
 function Navbar () {
@@ -25,10 +26,10 @@ function Navbar () {
 			</MobileIcon >
 
 			<Navig onClick={handClick} click={click}>
-				<Navlink>Home</Navlink>
-				<Navlink>Contact</Navlink>
-				<Navlink>Services</Navlink>
-				<Navlink>Blog</Navlink>
+				<Link to = '/' style ={{color: 'white', textDecoration: 'none'}}><Navlink>Home</Navlink></Link>
+				<Link to = '/contact' style ={{color: 'white', textDecoration: 'none'}}><Navlink>Contact</Navlink></Link>
+				<Link to = '/serve' style ={{color: 'white', textDecoration: 'none'}}><Navlink>Services</Navlink></Link>
+				<Link to = '/blog' style ={{color: 'white', textDecoration: 'none'}}><Navlink>Blog</Navlink></Link>
 			</Navig>
 
 		</NavContainer>
