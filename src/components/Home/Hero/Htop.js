@@ -1,14 +1,10 @@
 import React from 'react'
 import './Htop.Element.js'
 import {Htops, Ha, ButNav, Pres, Pres2, Hea, Par,
-Hmid, Hmidup, Hb, Hbt, Hbp, Hc, Hd, Image,
-Hmidter, impact, Pat, Pres3, midspace, midlay,
-Image2hold, Image2a, Image2b} from './Htop.Element'
+Hmid, Hmidup, Hb, Hbt, Hbp, Hc, Hd, Image, Hmidter} from './Htop.Element'
 import Mis from './mis.png'
 import Vis from './vis.png'
 import Vol from './vol.png'
-import feed1 from './feed1.jpg'
-import sapa1 from './sapa1.jpg'
 
 
 
@@ -27,8 +23,7 @@ function Htop() {
             </ButNav>
         </Ha>   
     </Htops>
-
-    <Hmid>
+     <Hmid>
       <Hmidup>
         <Hb>
           <Image>
@@ -61,27 +56,8 @@ function Htop() {
             people, better than we meet it.</Hbp>
         </Hd>
       </Hmidup>
-      <Hmidter>
-        <impact>Impact</impact>
-       <midspace>
-       <midlay>
-        <Pat>We believe everyone should be able to live with dignity,<br/>
-        without dependence. We are a Non-Governmental<br/>
-        Organization, based in Lagos Nigeria. We strive to<br/>
-        protect and feed the poor, advocate and enlighten<br/>
-        communities, empower young people, serve as the<br/>
-        voice to the voiceless, we give grants and scholarship,<br/>
-        we serve as an outstretched arm of God, we bring<br/>
-        succor and hope to the need</Pat>
-        <Pres3>Read More</Pres3>
-        </midlay>
-        <Image2hold>
-            <Image2a src={sapa1}/>
-            <Image2b src={feed1}/>
-        </Image2hold>
-        </midspace>
-      </Hmidter>
     </Hmid>
+   
     </>
   )
 }
